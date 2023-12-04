@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Ubuntu:wght@300&display=swap');
+
+body{
+    margin : 0;
+    padding : 0;
+    font-family : 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    justify-items: center;
+}
+
+nav {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80.5px;
+}
+
+nav .logo img {
+    height: 45px;
+    width: auto;
+}
+
+nav .nav-elements {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-elements ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    columns: #333;
+    font-size: 16px;
+}
+
+nav .nav-elements ul li:nth-child(2) {
+    color: rgb(212, 207, 207);
+}
+
+nav .nav-elements a {
+    position: relative;
+    margin-left: 17.5px;
+}
+
+nav .nav-elements a img {
+    display: inline-block;
+}
+
+nav .nav-elements a span {
+    display: inline-block;
+    position: absolute;
+    right: -10px;
+    bottom: 20px;
+    background-color: #ff0000;
+    font-size: 12px;
+    padding: 3px 6.5px;
+    border-radius: 50%;
+    color: white;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 0;
+    background-color: #f4f4f4;
+}
+
+.search input {
+    width: 372px;
+    height: 45px;
+    padding: 0 15px;
+    font-size: 16px;
+    border: 1px solid #cacaca;
+    border-radius: 3px;
+    outline: none;
+    margin: 5px 17px;
+}
+
+.search input::placeholder {
+    font-size: 16px;
+    font-style: italic;
+    color: #494949;
+}
+
+.search .btns {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.search .btns button {
+    min-width: 129px;
+    height: 45px;
+    margin-right: 17px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.search .btns button:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #509e2f;
+}
+
+.search .btns button:nth-child(1):hover {
+    background-color: #528512;
+}
+
+.search .btns button:nth-child(1) img {
+    margin-right: 5px;
+}
+
+.search .btns button:nth-child(2) {
+    background-color: #0b2e58;
+}
+
+.search .btns button:nth-child(2):hover {
+    background-color: #032043;
+}
+
+.currentPage {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-top: 58px;
+    font-size: 18px;
+    color: #333;
+    font-family: 'Open-Sans', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.currentPage p a {
+    text-decoration: none;
+    color: #333;
+}
+
+.currentPage .current {
+    color: #0b2e58;
+}
+
+.currentPage p a:hover {
+    color: #0b2e58;
+}
+
+.currentPage p img {
+    margin: 0 1px;
+}
+
+.loginCreate {
+    margin-bottom: 9px;
+}
+
+.loginCreate h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+.register {
+    width: 90vw;
+    display: grid;
+}
+
+.register h2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.register p {
+    margin-top: 0px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.register .personalInfo {
+    width: 100%;
+}
+
+.register .personalInfo .flex {
+    width: 100%;
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.register .personalInfo .flex .name {
+    width: 48.75%;
+}
+
+.register .personalInfo .flex .name:nth-child(1) {
+    margin-right: 2.5%;
+}
+
+.register .personalInfo input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #333;
+    border: 1px solid #cacaca;
+    padding: 0 15px !important;
+    font-size: 16px;
+    min-width: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 3px;
+}
+
+.register .personalInfo p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10.5px;
+}
+
+.register .loginH2 {
+    margin-top: 50px;
+    margin-bottom: 12px;
+}
+
+.register .loginPass {
+    width: 100%;
+}
+
+.register .loginPass .flex {
+    width: 100%;
+    display: flex;
+}
+
+.register .loginPass .flex .name {
+    width: 48.75%;
+}
+
+.register .loginPass .flex .name:nth-child(1) {
+    margin-right: 2.5%;
+}
+
+.register .loginPass input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #333;
+    border: 1px solid #cacaca;
+    padding: 0 15px !important;
+    font-size: 16px;
+    min-width: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 3px;
+}
+
+.register .loginPass p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10.5px;
+}
+
+.register .btn {
+    display: inline-flex;
+    height: 45px;
+    width: 129px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 3px;
+    border: 0;
+    outline: 0;
+    background-color: #0b2e58;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.register .btn:hover {
+    background-color: #032043;
+}
+
+.footer {
+    width: 100%;
+    padding: 25px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.footer p {
+    color: #757575;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+@media (max-width: 750px) {
+    .search input {
+        width: calc(84% + 8.5px);
+    }
+
+    .search .btns {
+        width: 100%;
+    }
+
+    .search .btns button {
+        width: 42%;
+        margin: 0 8.5px;
+    }
+
+    .currentPage {
+        padding-top: 35px;
+    }
+
+    .loginCreate h1 {
+        font-size: 32px;
+    }
+
+    .register h2 {
+        font-size: 26px;
+    }
+
+    .register .personalInfo .flex {
+        display: grid;
+        margin-bottom: 0;
+    }
+
+    .register .personalInfo .flex .name {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .register .loginPass .flex {
+        display: grid;
+        margin-bottom: 0;
+    }
+
+    .register .loginPass .flex .name {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .register .btn {
+        margin-top: 18px;
+        margin-bottom: 55px;
+    }
+
+    .footer{
+        padding: 18px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .search input {
+        width: calc(80% + 8.5px);
+    }
+
+    .search .btns {
+        width: 100%;
+    }
+
+    .search .btns button {
+        width: 42%;
+        margin: 0 8.5px;
+    }
+
+    .currentPage {
+        padding-top: 20px;
+    }
+
+    .loginCreate h1 {
+        font-size: 22px;
+        margin: 0 10px;
+    }
+
+    .register h2 {
+        font-size: 20px;
+    }
+
+    .register .personalInfo .flex {
+        display: grid;
+        margin-bottom: 0;
+    }
+
+    .register .personalInfo .flex .name {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .register .loginPass .flex {
+        display: grid;
+        margin-bottom: 0;
+    }
+
+    .register .loginPass .flex .name {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .register .btn {
+        margin-top: 0px;
+        margin-bottom: 35px;
+    }
+
+    .footer {
+        padding: 10px 0;
+    }
+}

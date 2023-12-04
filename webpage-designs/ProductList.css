@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Ubuntu:wght@300&display=swap');
+
+body{
+    margin : 0;
+    padding : 0;
+    font-family : 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    justify-items: center;
+}
+
+nav {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80.5px;
+}
+
+nav .logo img {
+    height: 45px;
+    width: auto;
+}
+
+nav .nav-elements {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-elements ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    columns: #333;
+    font-size: 16px;
+}
+
+nav .nav-elements ul li:nth-child(2) {
+    color: rgb(212, 207, 207);
+}
+
+nav .nav-elements a {
+    position: relative;
+    margin-left: 17.5px;
+}
+
+nav .nav-elements a img {
+    display: inline-block;
+}
+
+nav .nav-elements a span {
+    display: inline-block;
+    position: absolute;
+    right: -10px;
+    bottom: 20px;
+    background-color: #ff0000;
+    font-size: 12px;
+    padding: 3px 6.5px;
+    border-radius: 50%;
+    color: white;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 0;
+    background-color: #f4f4f4;
+}
+
+.search input {
+    width: 372px;
+    height: 45px;
+    padding: 0 15px;
+    font-size: 16px;
+    border: 1px solid #cacaca;
+    border-radius: 3px;
+    outline: none;
+    margin: 5px 17px;
+}
+
+.search input::placeholder {
+    font-size: 16px;
+    font-style: italic;
+    color: #494949;
+}
+
+.search .btns {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.search .btns button {
+    min-width: 129px;
+    height: 45px;
+    margin-right: 17px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.search .btns button:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #509e2f;
+}
+
+.search .btns button:nth-child(1):hover {
+    background-color: #528512;
+}
+
+.search .btns button:nth-child(1) img {
+    margin-right: 5px;
+}
+
+.search .btns button:nth-child(2) {
+    background-color: #0b2e58;
+}
+
+.search .btns button:nth-child(2):hover {
+    background-color: #032043;
+}
+
+.loginCreate {
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+.loginCreate h1 {
+    color: #333;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.footer {
+    width: 100%;
+    padding: 25px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.footer p {
+    color: #757575;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.sortItems {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #414141;
+    margin-bottom: 34px;
+}
+
+.sortItems .prodName {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sortItems .sortSelect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sortItems .sortSelect p {
+    font-size: 14px;
+}
+
+.sortItems .sortSelect select {
+    background-color: transparent;
+    margin-left: 10px;
+    border: 1px solid #757575;
+    width: 180px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-bottom: 40px;
+}
+
+.gridContainer .gridBox {
+    width: 228px;
+    display: grid;
+    border: 1px solid #cacaca;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.gridContainer .gridBox img {
+    width: 228px;
+    height: 188.5px;
+    z-index: -1;
+}
+
+.gridContainer .gridBox .boxDetails {
+    width: 208px;
+    padding: 18px 10px;
+}
+
+.gridContainer .gridBox .boxDetails .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #414141;
+}
+
+.gridContainer .gridBox .boxDetails .category {
+    font-size: 14px;
+    color: #818181;
+    margin-bottom: 12px;
+}
+
+.gridContainer .gridBox .boxDetails .prodDes {
+    font-size: 16px;
+    color: #474747;
+    margin-bottom: 18px;
+}
+
+.gridContainer .gridBox .boxDetails .discount {
+    color: #757575;
+}
+
+.gridContainer .gridBox .boxDetails .discount span {
+    color: #509e2f;
+    font-weight: bold;
+}
+
+.gridContainer .gridBox .boxDetails .price {
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.gridContainer .gridBox .boxDetails .addToCart {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #f14d54;
+    color: white;
+    font-size: 18px;
+}
+
+.pages ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+.pages ul li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.pages ul .disable {
+    opacity: 0.35;
+}
+
+.pages ul li a {
+    display: grid;
+    place-items: center;
+    height: 25px;
+    width: 25px;
+    text-decoration: none;
+    color: #414141;
+}
+
+.pages ul li .active {
+    border-radius: 50%;
+    background-color: #f14d54;
+    color: white;
+}
+
+@media (max-width: 750px) {
+    .search input {
+        width: calc(84% + 8.5px);
+    }
+
+    .search .btns {
+        width: 100%;
+    }
+
+    .search .btns button {
+        width: 42%;
+        margin: 0 8.5px;
+    }
+
+    .loginCreate {
+        margin-top: 35px;
+        margin-bottom: 40px;
+    }
+
+    .loginCreate h1 {
+        font-size: 32px;
+    }
+
+    .sortItems {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sortItems .prodName {
+        margin-bottom: 8px;
+    }
+
+    .pages ul {
+        margin-bottom: 55px;
+    }
+
+    .footer{
+        padding: 18px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .search input {
+        width: calc(80% + 8.5px);
+    }
+
+    .search .btns {
+        width: 100%;
+    }
+
+    .search .btns button {
+        width: 42%;
+        margin: 0 8.5px;
+    }
+
+    .loginCreate {
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+
+    .loginCreate h1 {
+        font-size: 22px;
+        margin: 0 10px;
+    }
+
+    .pages ul {
+        margin-bottom: 30px;
+    }
+
+    .footer {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 1025px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 775px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 515px) {
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pages ul li {
+        margin: 0 1px;
+    }
+}

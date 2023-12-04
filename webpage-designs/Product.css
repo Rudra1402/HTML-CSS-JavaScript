@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Ubuntu:wght@300&display=swap');
+
+body{
+    margin : 0;
+    padding : 0;
+    font-family : 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    justify-items: center;
+}
+
+nav {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80.5px;
+}
+
+nav .logo img {
+    height: 45px;
+    width: auto;
+}
+
+nav .nav-elements {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-elements ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    columns: #333;
+    font-size: 16px;
+}
+
+nav .nav-elements ul li:nth-child(2) {
+    color: rgb(212, 207, 207);
+}
+
+nav .nav-elements a {
+    position: relative;
+    margin-left: 17.5px;
+}
+
+nav .nav-elements a img {
+    display: inline-block;
+}
+
+nav .nav-elements a span {
+    display: inline-block;
+    position: absolute;
+    right: -10px;
+    bottom: 20px;
+    background-color: #ff0000;
+    font-size: 12px;
+    padding: 3px 6.5px;
+    border-radius: 50%;
+    color: white;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 0;
+    background-color: #f4f4f4;
+}
+
+.search input {
+    width: 372px;
+    height: 45px;
+    padding: 0 15px;
+    font-size: 16px;
+    border: 1px solid #cacaca;
+    border-radius: 3px;
+    outline: none;
+    margin: 5px 17px;
+}
+
+.search input::placeholder {
+    font-size: 16px;
+    font-style: italic;
+    color: #494949;
+}
+
+.search .btns {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.search .btns button {
+    min-width: 129px;
+    height: 45px;
+    margin-right: 17px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.search .btns button:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #509e2f;
+}
+
+.search .btns button:nth-child(1):hover {
+    background-color: #528512;
+}
+
+.search .btns button:nth-child(1) img {
+    margin-right: 5px;
+}
+
+.search .btns button:nth-child(2) {
+    background-color: #0b2e58;
+}
+
+.search .btns button:nth-child(2):hover {
+    background-color: #032043;
+}
+
+.loginCreate {
+    margin-top: 75px;
+    margin-bottom: 45px;
+}
+
+.loginCreate h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.addProduct {
+    width: 90vw;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+}
+
+.addProduct div input {
+    width: 220px;
+    height: 45px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #cacaca;
+    outline: none;
+    font-size: 16px;
+}
+
+.addProduct div button {
+    min-width: 129px;
+    height: 45px;
+    padding: 0 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: #0b2e58;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.table {
+    width: 90vw;
+}
+
+.table table {
+    min-width: 900px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table td, th {
+    color: #212121;
+    font-weight: 500;
+    margin: 16px 0;
+    padding: 0 16px;
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 1px solid #cacaca;
+    line-height: 1.5;
+}
+
+table thead th {
+    padding: 16px;
+}
+
+thead tr th:nth-child(1) {
+    width: 78px;
+}
+
+thead tr th:nth-child(2) {
+    width: 265px;
+}
+
+thead tr th:nth-child(3) {
+    width: 255px;
+}
+
+thead tr th:nth-child(4) {
+    width: 114px;
+}
+
+tbody tr th:nth-child(1) {
+    width: 62px;
+}
+
+tbody tr th:nth-child(2) {
+    width: 234px;
+}
+
+tbody tr th:nth-child(3) {
+    width: 223px;
+}
+
+tbody tr th:nth-child(4) {
+    width: 114px;
+}
+
+table .btn-list {
+    width: 347px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+table .btn-list button {
+    height: 30px;
+    min-width: 80px;
+    padding:  0 10px;
+    background: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.35s;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+table .btn-list button:nth-child(1) {
+    color: #509e2f;
+    border: 1px solid #509e2f;
+}
+
+table .btn-list button:nth-child(1):hover {
+    background-color: #509e2f;
+    border: 1px solid #509e2f;
+    color: white;
+}
+
+table .btn-list button:nth-child(2) {
+    color: #0b2e58;
+    border: 1px solid #0b2e58;
+    margin-left: 10px;
+}
+
+table .btn-list button:nth-child(2):hover {
+    background-color: #0b2e58;
+    border: 1px solid #0b2e58;
+    color: white;
+    margin-left: 10px;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 85%;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    color: #333;
+}
+
+.page .innerPage {
+    font-size: 16px;
+    color: #333;
+}
+
+.page ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 20px;
+}
+
+.page ul li {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.page .disable {
+    opacity: 0.45;
+}
+
+.page select {
+    margin: 0 32px 0 8px;
+    border: 1px solid #cacaca;
+    height: 40px;
+    width: 50px;
+    padding: 5px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    padding: 25px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.footer p {
+    color: #757575;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+@media (max-width: 750px) {
+    .search input {
+        width: calc(84% + 8.5px);
+    }
+
+    .search .btns {
+        width: 100%;
+    }
+
+    .search .btns button {
+        width: 42%;
+        margin: 0 8.5px;
+    }
+
+    .loginCreate {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .loginCreate h1 {
+        font-size: 32px;
+    }
+
+    .table {
+        width: 90vw;
+        overflow: scroll;
+    }
+
+    .addProduct div {
+        width: 100%;
+        display: flex;
+    }
+
+    .addProduct div input {
+        width: calc(100% - 149px);
+    }
+
+    .page {
+        margin-bottom: 45px;
+    }
+
+    .page select {
+        margin: 0 20px 0 8px;
+    }
+    
+    .page ul {
+        margin-left: 10px;
+    }
+    
+    .page ul li {
+        padding: 10px;
+    }
+
+    .footer{
+        padding: 18px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .search input {
+        width: calc(80% + 8.5px);
+    }
+
+    .search .btns {
+        width: 100%;
+    }
+
+    .search .btns button {
+        width: 42%;
+        margin: 0 8.5px;
+    }
+
+    .loginCreate {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .loginCreate h1 {
+        font-size: 25px;
+        margin: 0 10px;
+    }
+
+    .addProduct div {
+        width: 100%;
+        display: grid;
+    }
+
+    .addProduct div input {
+        width: 100%;
+    }
+
+    .addProduct div button {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    .table {
+        width: 90vw;
+        overflow: scroll;
+    }
+
+    .page {
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+
+    .page select {
+        margin: 0 12px 0 8px;
+    }
+
+    .page ul {
+        margin-left: 10px;
+    }
+
+    .footer {
+        padding: 10px 0;
+    }
+}

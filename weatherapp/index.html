@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="weatherlogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="longLat.css">
+    <title>Advanced Weather</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="containInputs">
+            <input type="text" id="searchInp" placeholder="Enter City">
+            <button id="searchBtn">Search</button>
+            <button id="show"><i class="fa fa-location-arrow" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div id="error"></div>
+        <div id="display">
+            <img src="" id="logo">
+            <div class="containSides">
+                <div class="leftSide">
+                    <div class="headings">City&nbsp; /</div>
+                    <div class="headings">Temperature&nbsp; /</div>
+                    <div class="headings">Latitude&nbsp; /</div>
+                    <div class="headings">Longitude&nbsp; /</div>
+                    <div class="headings">Air Quality Index&nbsp; /</div>
+                    <div class="headings">Description&nbsp; /</div>
+                </div>
+                <div class="rightSide">
+                    <div id="city"></div>
+                    <div id="temp"></div>
+                    <div id="lat"></div>
+                    <div id="lon"></div>
+                    <div id="aqi"></div>
+                    <div id="des"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="longLat.js"></script>
+</body>
+
+</html>

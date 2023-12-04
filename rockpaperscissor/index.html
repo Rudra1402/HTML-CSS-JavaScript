@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./rockpaperscissor.css">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <button id="check">Check Result</button>
+    <div class="flex">
+        <div class="comp">
+            <div class="head">Computer</div>
+            <img src="./bg1.jpg" id="comp">
+        </div>
+        <div class="user">
+            <div class="head">You</div>
+            <img src="./bg1.jpg" id="user">
+        </div>
+    </div>
+    <div class="containBtns">
+        <button class="rock btn" onclick="userValue(event)">Rock</button>
+        <button class="paper btn" onclick="userValue(event)">Paper</button>
+        <button class="scissor btn" onclick="userValue(event)">Scissor</button>
+    </div>
+    <div id="flash">
+        <img src="./cross.png" id="cross">
+        <div id="result"></div>
+        <button id="reset">Reset</button>
+    </div>
+    <script src="./rockpaperscissor.js"></script>
+</body>
+</html>

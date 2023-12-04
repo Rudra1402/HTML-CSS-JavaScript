@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="temp3.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div id="startPage">
+        <div>Coding Quiz</div>
+        <p>There are 10 questions in the QUIZ. You have to select an answer for each question and then click on 'Submit'
+            button.<br><br>Note: If you click on 'Submit' button without selecting an answer it will be considered as
+            incorrect answer.
+        </p>
+        <button id="start">Start Quiz</button>
+    </div>
+    <div id="questionPage">
+        <div id="pbars" class="progress-bars">
+            <div class="bar">
+                <div id="green"></div>
+                <div id="n1">0 / 10</div>
+            </div>
+            <div class="bar">
+                <div id="red"></div>
+                <div id="n2">0 / 10</div>
+            </div>
+        </div>
+        <div class="quesContain">
+            <div id="ques">Who is the Jodd of IGC?</div>
+            <div class="fourOps">
+                <p class="op">
+                    <input type="radio" name="option" id="op1" value="scoutOP">
+                    <label id="ans1"></label>
+                </p>
+                <p class="op">
+                    <input type="radio" name="option" id="op2" value="Jonathan">
+                    <label id="ans2"></label>
+                </p>
+                <p class="op">
+                    <input type="radio" name="option" id="op3" value="Mavi">
+                    <label id="ans3"></label>
+                </p>
+                <p class="op">
+                    <input type="radio" name="option" id="op4" value="s8ulSID">
+                    <label id="ans4"></label>
+                </p>
+            </div>
+            <button id="sub">Submit</button>
+        </div>
+    </div>
+    <div id="resultPage">
+        <div id="quizOver"></div>
+        <div id="score"></div>
+    </div>
+    <script src="temp3.js"></script>
+</body>
+
+</html>

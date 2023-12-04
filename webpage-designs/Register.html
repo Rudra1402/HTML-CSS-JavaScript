@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Style-guide/HTML - TatvaSoft/images/favicon/favicon.ico">
+    <link rel="stylesheet" href="Register.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo"><img src="./site-logo.svg" alt=""></div>
+            <div class="nav-elements">
+                <ul>
+                    <li>Login</li>
+                    <li>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+                    <li>Register</li>
+                </ul>
+                <a href="#">
+                    <div class="cart">
+                        <img src="./Style-guide/HTML - TatvaSoft/images/cart.svg" alt="">
+                        <span>0</span>
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="What are you looking for...">
+            <div class="btns">
+                <button><img src="./Style-guide/HTML - TatvaSoft/images/search.svg" alt="">Search</button>
+                <button>Cancel</button>
+            </div>
+        </div>
+        <div class="currentPage">
+            <p><a href="#">Home</a></p>
+            <p>&nbsp;<img src="./Style-guide/HTML - TatvaSoft/images/breadcrumb-arrow.svg" alt=""></p>
+            <p><a href="#" class="current">Create an Account</a></p>
+        </div>
+        <div class="loginCreate">
+            <h1>Login or Create an Account</h1>
+        </div>
+        <div class="register">
+            <h2>Personal Information</h2>
+            <p>Please enter the following information to create your account.</p>
+            <form action="" class="personalInfo">
+                <div class="flex">
+                    <div class="name">
+                        <p>First Name *</p>
+                        <input type="text" id="fname">
+                    </div>
+                    <div class="name">
+                        <p>Last Name *</p>
+                        <input type="text" id="lname">
+                    </div>
+                </div>
+                <p>Email Address *</p>
+                <input type="email" id="email">
+            </form>
+            <h2 class="loginH2">Login Information</h2>
+            <form action="" class="loginPass">
+                <div class="flex">
+                    <div class="name">
+                        <p>Password *</p>
+                        <input type="text" id="password">
+                    </div>
+                    <div class="name">
+                        <p>Confirm Password *</p>
+                        <input type="text" id="confirm-password">
+                    </div>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+        <div class="footer">
+            <p>© 2022 Tatvasoft.com. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

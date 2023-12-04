@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="colorTool.css">
+    <link rel="icon" href="ctool.png">
+    <title>Color Tool</title>
+</head>
+
+<body>
+    <div class="title" id="colorTitle">Color Tool</div>
+    <div class="hexInput">
+        <label for="hex">HexColor</label>
+        <input type="text" id="myHex" name="hex" placeholder="#000000">
+        <button type="submit" id="sub">Submit</button>
+    </div>
+    <div class="opacity">
+        <p id="opVal"></p>
+        <input type="range" min="0" max="100" id="range" oninput="getInput()">
+    </div>
+    <div class="wrap">
+        <div class="showrgb">
+            <p>Base Color</p>
+            <p id="rgb"></p>
+        </div>
+        <div id="baseColor" class="box"></div>
+    </div>
+    <div class="wrap">
+        <div class="showrgb">
+            <p>Opacity</p>
+            <p id="rgba"></p>
+        </div>
+        <div id="alterColor" class="box"></div>
+    </div>
+    <script src="colorTool.js"></script>
+</body>
+
+</html>
